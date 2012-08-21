@@ -1,0 +1,21 @@
+<div class="login_form">
+<!-- BEGIN auth_on -->
+    <p>Вы вошли как {user_name} [<a href="./?autorisation=exit">Выйти</a>]</p>
+<!-- END auth_on -->
+
+<!-- BEGIN auth_off -->
+<form action="./?autorisation=login" method="POST">
+<table>
+    <tr>
+        <td>Логин:</td><td><input type="text" name="login" /></td>
+    </tr>
+    <tr>
+        <td>Пароль:</td><td><input type="password" name="password" /></td>
+    </tr>
+    <tr>
+        <td colspan="2"><input type="submit" value="Отправить" /></td>
+    </tr>
+</table>
+</form>
+<!-- END auth_off -->
+</div>

@@ -1,0 +1,36 @@
+<!-- BEGIN blog -->
+<table class="block blogs_mass_list" cellpadding="0" cellspacing="0">
+    <tr>
+        <td>&emsp;</td><td class="b2">&emsp;</td><td>&emsp;</td>
+    </tr>
+    <tr>
+        <td class="b4"></td>
+        <td class="center">
+            <b>Тема:</b> {blogs_subject} ({blogs_login})
+            <div style="float: right;">{blogs_date}
+<!-- BEGIN can_edit -->
+                [<a href="?mod=blogs&action=edit&id={blogs_id}">Редактировать</a>]
+<!-- END can_edit -->
+            </div> <hr>
+            <p>{blogs_text}</p>
+        </td>
+        <td class="b6"></td>
+    </tr>
+    <tr>
+        <td>&emsp;</td><td class="b8">&emsp;</td><td>&emsp;</td>
+    </tr>
+</table>
+<!-- END blog -->
+
+
+<!-- BEGIN blog_form -->
+<h2>{editor_mod}</h2>
+<div class="blog_form">
+<form action="./?mod=blogs&action=send" method="POST">
+    <input type="hidden" name="id" value="{blogs_id}" />
+    Тема: <input class="subject" type="text" name="subject" value="{blogs_subject}" /><br />
+    Текст сообщения:<br><textarea name="text">{blogs_text}</textarea><br />
+    <input type="submit" class="submt" value="Отправить" />
+</form>
+</div>
+<!-- END blog_form -->
