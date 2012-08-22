@@ -8,4 +8,6 @@ $GLOBALS['config']['db_prefix']             =   'tr_';
 
 $GLOBALS['config']['tpl_folder']            =   'tpl/main';
 
+$GLOBALS['config']['encoding']            =   'cp1251';
+
 ?>

@@ -58,6 +58,7 @@ class HtmlDocument {
         $tpl = Tpl::getInstance();
         
          if ($this->print_only_content) {
+             header('Content-Type: text/html;charset='.$GLOBALS['config']['encoding']);
              print $this->getContent();
          }
          else {

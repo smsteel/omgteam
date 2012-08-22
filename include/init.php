@@ -20,6 +20,8 @@ include 'functions.php';
 
 ini_set('display_errors', '1');
 
+Tpl::getInstance($GLOBALS['config']['tpl_folder']);
+
 MySql::getInstance(
         $GLOBALS['config']['db_host'],
         $GLOBALS['config']['db_login'],
@@ -28,7 +30,7 @@ MySql::getInstance(
         $GLOBALS['config']['db_prefix']
         );
 
-MySql::getInstance()->char_set('cp1251');
+MySql::getInstance()->char_set($GLOBALS['config']['encoding']);
 
 Autorisation::getInstance();
 
