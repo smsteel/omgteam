@@ -11,5 +11,7 @@ $GLOBALS['config']['tpl_folder']            =   'tpl/main';
 $GLOBALS['config']['encoding']            =   'cp1251';
 
 //omg config
+//ppc config
+//lol config
 
 ?>
